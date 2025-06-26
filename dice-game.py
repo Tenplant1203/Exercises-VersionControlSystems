@@ -1,7 +1,13 @@
 import random
 
 
-def roll():
+def main():
+    name = input("What is your name?\n> ")
+    print(f"Hello, {name}!")
+    roll(name)
+
+
+def roll(name):
     print("Rolling dice...")
     die1 = random.randint(1, 6)
     die2 = random.randint(1, 6)
@@ -10,10 +16,10 @@ def roll():
     print(f"Die 2: {die2}")
     print(f"Total value: {total}")
     if total > 7:
-        print("You won")
+        print(f"{name} won!")
     else:
-        print("You lost")
+        print(f"{name} lost!")
 
 
 if __name__ == "__main__":
-    roll()
+    main()
