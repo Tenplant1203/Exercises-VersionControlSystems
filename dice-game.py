@@ -1,6 +1,12 @@
 import random
 
 
+def main():
+    name = input("What is your name?\n> ")
+    print(f"Hello, {name}!")
+    roll()
+
+
 def roll():
     print("Rolling dice...")
     die1 = random.randint(1, 6)
@@ -11,5 +17,4 @@ def roll():
 
 
 if __name__ == "__main__":
-    roll()
-
+    main()
